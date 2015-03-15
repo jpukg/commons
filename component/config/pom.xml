@@ -1,0 +1,141 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.samenea.commons.component.config</groupId>
+    <artifactId>commons-component-config</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>commons-commponent-config</name>
+
+    <parent>
+        <groupId>com.samenea</groupId>
+        <artifactId>projects</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <build>
+        <plugins>
+            <!--<plugin>-->
+            <!--<groupId>org.codehaus.mojo</groupId>-->
+            <!--<artifactId>hibernate3-maven-plugin</artifactId>-->
+
+            <!--<executions>-->
+            <!--<execution>-->
+            <!--<phase>process-test-resources</phase>-->
+            <!--<goals>-->
+            <!--<goal>hbm2ddl</goal>-->
+            <!--</goals>-->
+
+            <!--</execution>-->
+            <!--</executions>-->
+            <!--</plugin>-->
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.1.2</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+        <testResources>
+            <testResource>
+                <directory>src/test/resources</directory>
+                <filtering>false</filtering>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </testResource>
+            <testResource>
+                <directory>src/test/resources</directory>
+                <filtering>true</filtering>
+                <excludes>
+                    <exclude>**/*.xml</exclude>
+                </excludes>
+            </testResource>
+            <testResource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>**/log4j.xml</include>
+                </includes>
+            </testResource>
+        </testResources>
+
+    </build>
+    <profiles>
+        <profile>
+            <id>oracle</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <dbunit.dataTypeFactoryName>org.dbunit.ext.oracle.OracleDataTypeFactory</dbunit.dataTypeFactoryName>
+                <dbunit.schema>COMMONS</dbunit.schema>
+                <!-- Make sure to capitalize the schema name -->
+                <dbunit.source>src/test/resources/sample-data.xml</dbunit.source>
+                <hibernate.dialect>org.hibernate.dialect.Oracle10gDialect</hibernate.dialect>
+                <jdbc.groupId>com.oracle</jdbc.groupId>
+                <jdbc.artifactId>ojdbc16</jdbc.artifactId>
+                <jdbc.version>11.2.0.1.0</jdbc.version>
+                <jdbc.driverClassName>oracle.jdbc.OracleDriver</jdbc.driverClassName>
+                <jdbc.url>${commons.oracle.url}</jdbc.url>
+                <jdbc.username>${commons.oracle.username}</jdbc.username>
+                <jdbc.password>${commons.oracle.password}</jdbc.password>
+            </properties>
+            <dependencies>
+                <dependency>
+                    <groupId>com.oracle</groupId>
+                    <artifactId>ojdbc16</artifactId>
+                    <version>11.2.0.1.0</version>
+                </dependency>
+            </dependencies>
+        </profile>
+
+    </profiles>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.samenea.commons.component.utils</groupId>
+            <artifactId>commons-component-utils</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.samenea.commons</groupId>
+            <artifactId>commons-component-model</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.samenea.commons.repository</groupId>
+            <artifactId>commons-repository-jpa</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss</groupId>
+            <artifactId>jboss-vfs</artifactId>
+            <version>3.1.0.Final</version>
+        </dependency>
+    </dependencies>
+    <properties>
+        <hibernate.showSql>true</hibernate.showSql>
+    </properties>
+
+
+</project>

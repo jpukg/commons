@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+    <appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                   value="%p - %C{2}  | %m%n"/>
+        </layout>
+    </appender>
+    <appender name="FILE" class="org.apache.log4j.FileAppender">
+        <param name="File" value="${log.folder}/commons.log"/>
+        <param name="Threshold" value="ALL"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%-4r [%t] %-5p %c %x - %m%n"/>
+        </layout>
+    </appender>
+    <appender name="jdbc" class="com.samenea.commons.component.log.hibernateappender.JdbcAppender">
+        <param name="url" value="${log.jdbc.url}"/>
+        <param name="driver" value="${log.jdbc.driverClassName}"/>
+        <param name="username" value="${log.jdbc.username}"/>
+        <param name="password" value="${log.jdbc.password}"/>
+    </appender>
+    <appender name="hibernate" class="com.samenea.commons.component.log.hibernateappender.HibernateAppender">
+        <param name="url" value="${log.jdbc.url}"/>
+        <param name="driver" value="${log.jdbc.driverClassName}"/>
+        <param name="username" value="${log.jdbc.username}"/>
+        <param name="password" value="${log.jdbc.password}"/>
+        <param name="dialect" value="${log.dialect}"/>
+        <param name="showSql" value="${log.showSql}"/>
+        <param name="hbm2ddl" value="${log.hbm2ddl}"/>
+    </appender>
+    <logger name="com.samenea">
+        <level value="ALL"/>
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
+    </logger>
+    <root>
+        <level value="ALL"/>
+        <appender-ref ref="hibernate"/>
+    </root>
+</log4j:configuration>

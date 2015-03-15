@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <table name="ACL_CLASS">
+        <column>ID</column>
+        <column>CLASS</column>
+        <row>
+            <value>1</value>
+            <value>com.samenea.smspanel.send.model.query.Filter</value>
+        </row>
+    </table>
+    <table name="ACL_SID">
+        <column>ID</column>
+        <column>PRINCIPAL</column>
+        <column>SID</column>
+        <row>
+            <value>1</value>
+            <value>1</value>
+            <value>admin</value>
+        </row>
+        <row>
+            <value>2</value>
+            <value>1</value>
+            <value>message</value>
+        </row>
+        <row>
+            <value>3</value>
+            <value>1</value>
+            <value>user</value>
+        </row>
+    </table>
+    <table name="ACL_OBJECT_IDENTITY">
+        <column>ID</column>
+        <column>ENTRIES_INHERITING</column>
+        <column>OBJECT_ID_IDENTITY</column>
+        <column>OWNER_SID</column>
+        <column>OBJECT_ID_CLASS</column>
+        <column>PARENT_OBJECT</column>
+        <row>
+            <value>1</value>
+            <value>1</value>
+            <value>31</value>
+            <value>1</value>
+            <value>1</value>
+            <null/>
+        </row>
+    </table>
+    <table name="ACL_ENTRY">
+        <column>ID</column>
+        <column>ACE_ORDER</column>
+        <column>AUDIT_FAILURE</column>
+        <column>AUDIT_SUCCESS</column>
+        <column>GRANTING</column>
+        <column>MASK</column>
+        <column>ACL_OBJECT_IDENTITY</column>
+        <column>SID</column>
+        <row>
+            <value>3</value>
+            <value>0</value>
+            <value>0</value>
+            <value>0</value>
+            <value>1</value>
+            <value>1</value>
+            <value>1</value>
+            <value>2</value>
+        </row>
+        <row>
+            <value>4</value>
+            <value>1</value>
+            <value>0</value>
+            <value>0</value>
+            <value>1</value>
+            <value>1</value>
+            <value>1</value>
+            <value>1</value>
+        </row>
+        <row>
+            <value>5</value>
+            <value>2</value>
+            <value>0</value>
+            <value>0</value>
+            <value>1</value>
+            <value>1</value>
+            <value>1</value>
+            <value>3</value>
+        </row>
+    </table>
+
+
+    <table name="APP_USER">
+        <column>ID</column>
+        <column>USER_NAME</column>
+        <column>PASSWORD</column>
+        <column>FA_FIRST_NAME</column>
+        <column>FA_LAST_NAME</column>
+        <column>EN_FIRST_NAME</column>
+        <column>EN_LAST_NAME</column>
+        <column>DEFAULT_LANG</column>
+        <column>EMAIL</column>
+        <column>PHONE_NO</column>
+        <column>ENABLED</column>
+        <column>VERSION</column>
+
+        <row>
+            <value>1</value>
+            <value>admin</value>
+            <value>7c4a8d09ca3762af61e59520943dc26494f8941b</value>
+            <value>&#1587;&#1585;&#1662;&#1585;&#1587;&#1578;</value>
+            <value>&#1587;&#1585;&#1662;&#1585;&#1587;&#1578;&#1740;</value>
+            <value>admin</value>
+            <value>admin</value>
+            <value>FA</value>
+            <value>admin@samenea.com</value>
+            <value>09122606199</value>
+            <value>1</value>
+            <value>6</value>
+
+        </row>
+        <row>
+            <value>1050</value>
+            <value>user</value>
+            <value>7c4a8d09ca3762af61e59520943dc26494f8941b</value>
+            <value>user</value>
+            <value>user</value>
+            <value>user</value>
+            <value>user</value>
+            <value>FA</value>
+            <value>admin@samenea.com</value>
+
+            <value>98978987</value>
+            <value>1</value>
+            <value>3</value>
+
+        </row>
+        <row>
+            <value>1051</value>
+            <value>message</value>
+            <value>7c4a8d09ca3762af61e59520943dc26494f8941b</value>
+            <value>message</value>
+            <value>message</value>
+            <value>message</value>
+            <value>message</value>
+            <value>EN</value>
+            <value>admin@samenea.com</value>
+
+            <value>645987878</value>
+            <value>1</value>
+            <value>3</value>
+
+        </row>
+        <row>
+            <value>1052</value>
+            <value>request</value>
+            <value>7c4a8d09ca3762af61e59520943dc26494f8941b</value>
+            <value>request</value>
+            <value>request</value>
+            <value>request</value>
+            <value>request</value>
+            <value>EN</value>
+            <value>admin@samenea.com</value>
+            <value>7887878</value>
+            <value>1</value>
+            <value>2</value>
+
+        </row>
+
+    </table>
+    <table name="APP_ROLE">
+        <column>ID</column>
+        <column>DESCRIPTION</column>
+        <column>ROLE_NAME</column>
+        <column>VERSION</column>
+
+        <row>
+            <value>1</value>
+            <value><![CDATA[admin role]]></value>
+            <value>ROLE_ADMIN</value>
+            <value>17</value>
+
+        </row>
+        <row>
+            <value>3050</value>
+            <value><![CDATA[role user]]></value>
+            <value>ROLE_USER</value>
+            <value>2</value>
+
+        </row>
+        <row>
+            <value>3051</value>
+            <value><![CDATA[role request]]></value>
+            <value>ROLE_REQUEST</value>
+            <value>0</value>
+
+        </row>
+        <row>
+            <value>3052</value>
+            <value><![CDATA[role message]]></value>
+            <value>ROLE_MESSAGE</value>
+            <value>0</value>
+
+        </row>
+        <row>
+            <value>3055</value>
+            <value><![CDATA[role test]]></value>
+            <value>ROLE_TEST</value>
+            <value>0</value>
+
+        </row>
+
+    </table>
+    <table name="APP_USER_ROLE">
+        <column>USER_ID</column>
+        <column>ROLE_ID</column>
+        <row>
+            <value>1</value>
+            <value>1</value>
+        </row>
+        <row>
+            <value>1050</value>
+            <value>3050</value>
+        </row>
+        <row>
+            <value>1051</value>
+            <value>3052</value>
+        </row>
+        <row>
+            <value>1052</value>
+            <value>3051</value>
+        </row>
+
+    </table>
+    <table name="Query">
+        <column>id</column>
+        <column>queryString</column>
+        <row>
+            <!-- base query -->
+            <value description="id">10</value>
+            <value description="queryString">select f1, f2 from dbx1_11 where f5 = {f3}
+            </value>
+
+        </row>
+        <!-- filter query -->
+        <row>
+            <value description="id">11</value>
+            <value description="queryString">select f1, f2 from dbx1_11 where f5 = 5
+            </value>
+        </row>
+        <!-- branch query -->
+        <row>
+            <value description="id">12</value>
+            <value description="queryString">select f1, f2 from dbx1_11 where f5 = 5
+            </value>
+        </row>
+        <row>
+            <value description="id">13</value>
+            <value description="queryString">select f1, f2 from dbx1_11 where f5 = 5
+            </value>
+        </row>
+        <row>
+            <value description="id">14</value>
+            <value description="queryString">select f1, f2 from dbx1_11 where f5 = 5
+            </value>
+        </row>
+        <row>
+            <value description="id">15</value>
+            <value description="queryString">select f1, f2 from dbx1_11 where f5 = 5
+            </value>
+        </row>
+    </table>
+    <table name="Type">
+        <column>id</column>
+        <column>title</column>
+        <row>
+            <value description="id">80</value>
+            <value description="title">String</value>
+        </row>
+        <row>
+            <value description="id">81</value>
+            <value description="title">gender</value>
+        </row>
+    </table>
+    <table name="EnumeratedType">
+        <column>id</column>
+        <row>
+            <value description="id">81</value>
+        </row>
+    </table>
+    <table name="type_value">
+        <column>EnumeratedType_id</column>
+        <column>key</column>
+        <column>value</column>
+        <row>
+            <value description="EnumeratedType_id">81</value>
+            <value description="key">0</value>
+            <value description="value">زن</value>
+        </row>
+        <row>
+            <value description="EnumeratedType_id">81</value>
+            <value description="key">1</value>
+            <value description="value">مرد</value>
+        </row>
+    </table>
+    <table name="QueryBasedType">
+        <column>id</column>
+        <column>Query_id</column>
+    </table>
+
+    <table name="Query_Arguments">
+        <column>query_id</column>
+        <column>nameInQuery</column>
+        <column>title</column>
+        <column>defaultValue</column>
+        <column>type_id</column>
+        <row>
+            <value description="query_id">10</value>
+            <value description="nameInQuery">f3</value>
+            <value description="title">سن</value>
+            <value description="defaultValue">0</value>
+            <value description="type_id">80</value>
+        </row>
+    </table>
+
+    <table name="Filter">
+        <column>id</column>
+        <column>title</column>
+        <column>description</column>
+        <column>createDate</column>
+        <column>Query_id</column>
+        <row>
+            <value description="id">30</value>
+            <value description="title">first filter</value>
+            <value description="description">this is for test!</value>
+            <value description="createDate">2012-07-30 10:12:12</value>
+            <value description="Query_id">10</value>
+        </row>
+        <row>
+            <value description="id">31</value>
+            <value description="title">second filter</value>
+            <value description="description">this is for test!</value>
+            <value description="createDate">2012-07-30 10:12:12</value>
+            <value description="Query_id">11</value>
+        </row>
+        <row>
+            <value description="id">32</value>
+            <value description="title">third filter</value>
+            <value description="description">this is for test!</value>
+            <value description="createDate">2012-07-30 10:12:12</value>
+            <value description="Query_id">12</value>
+        </row>
+        <row>
+            <value description="id">33</value>
+            <value description="title">forth filter</value>
+            <value description="description">this is for test!</value>
+            <value description="createDate">2012-07-30 10:12:12</value>
+            <value description="Query_id">13</value>
+        </row>
+        <row>
+            <value description="id">34</value>
+            <value description="title">fifth filter</value>
+            <value description="description">this is for test!</value>
+            <value description="createDate">2012-07-30 10:12:12</value>
+            <value description="Query_id">14</value>
+        </row>
+    </table>
+    <table name="MessageTemplate">
+        <column>id</column>
+        <column>templateText</column>
+        <row>
+            <value description="id">40</value>
+            <value description="templateText">hi {name} {family}.</value>
+        </row>
+    </table>
+    <table name="MessageTemplate_Filter">
+        <column>permittedFilters_id</column>
+        <column>permittedMessageTemplate_id</column>
+        <row>
+            <value description="permittedFilters_id">30</value>
+            <value description="permittedMessageTemplate_id">40</value>
+        </row>
+    </table>
+
+    <table name="Job">
+        <column>id</column>
+        <column>title</column>
+        <column>description</column>
+        <column>createDate</column>
+        <column>triggerDate</column>
+        <column>MessageTemplate_id</column>
+        <column>startDate</column>
+        <column>endDate</column>
+        <column>interval</column>
+        <column>priority</column>
+        <column>query_id</column>
+        <column>helperQuery_id</column>
+        <row>
+            <value description="id">60</value>
+            <value description="title">job title</value>
+            <value description="description">job description</value>
+            <value description="createDate">2012-07-29 10:12:12</value>
+            <value description="triggerDate">2012-07-30 10:12:12</value>
+            <value description="MessageTemplate_id">40</value>
+            <value description="startDate">2012-07-30 10:12:12</value>
+            <value description="endDate">2012-08-02 10:12:12</value>
+            <value description="interval">1440</value>
+            <value description="priority">1</value>
+            <value description="query_id">11</value>
+            <null/>
+        </row>
+        <row>
+            <value description="id">61</value>
+            <value description="title">job title</value>
+            <value description="description">job description</value>
+            <value description="createDate">2012-07-29 10:12:12</value>
+            <value description="triggerDate">2012-07-30 10:12:12</value>
+            <value description="MessageTemplate_id">40</value>
+            <value description="startDate">2012-07-30 10:12:12</value>
+            <null/>
+            <null/>
+            <value description="priority">0</value>
+            <value description="query_id">12</value>
+            <null/>
+        </row>
+        <row>
+            <value description="id">62</value>
+            <value description="title">job title</value>
+            <value description="description">job description</value>
+            <value description="createDate">2012-07-29 10:12:12</value>
+            <value description="triggerDate">2012-07-30 10:12:12</value>
+            <value description="MessageTemplate_id">40</value>
+            <value description="startDate">2012-07-30 10:12:12</value>
+            <null/>
+            <null/>
+            <value description="priority">0</value>
+            <value description="query_id">13</value>
+            <null/>
+        </row>
+        <row>
+            <value description="id">63</value>
+            <value description="title">job title</value>
+            <value description="description">job description</value>
+            <value description="createDate">2012-07-29 10:12:12</value>
+            <value description="triggerDate">2012-07-30 10:12:12</value>
+            <value description="MessageTemplate_id">40</value>
+            <value description="startDate">2012-07-30 10:12:12</value>
+            <null/>
+            <null/>
+            <value description="priority">0</value>
+            <value description="query_id">14</value>
+            <null/>
+        </row>
+        <row>
+            <value description="id">64</value>
+            <value description="title">job title</value>
+            <value description="description">job description</value>
+            <value description="createDate">2012-07-29 10:12:12</value>
+            <value description="triggerDate">2012-07-30 10:12:12</value>
+            <value description="MessageTemplate_id">40</value>
+            <value description="startDate">2012-07-30 10:12:12</value>
+            <null/>
+            <null/>
+            <value description="priority">0</value>
+            <value description="query_id">15</value>
+            <null/>
+        </row>
+    </table>
+
+    <table name="JobInstance">
+        <column>id</column>
+        <column>job_id</column>
+        <column>jobInstanceSize</column>
+        <column>remainedSize</column>
+        <column>status</column>
+        <column>createDate</column>
+        <column>startDate</column>
+        <column>endDate</column>
+        <column>queryString</column>
+        <row>
+            <value description="id">67</value>
+            <value description="job_id">60</value>
+            <value description="jobInstanceSize">10</value>
+            <value description="remainedSize">0</value>
+            <value description="status">SUCCESS</value>
+            <value description="createDate">2011-07-30 10:12:12</value>
+            <value description="startDate">2011-07-30 10:12:20</value>
+            <value description="endDate">2011-07-30 10:12:30</value>
+            <value description="queryString">select f1, f2 from dbx1_11 where f5 = 5
+            </value>
+
+        </row>
+        <row>
+            <value description="id">68</value>
+            <value description="job_id">60</value>
+            <value description="jobInstanceSize">10</value>
+            <value description="remainedSize">0</value>
+            <value description="status">SUCCESS</value>
+            <value description="createDate">2011-08-30 10:12:12</value>
+            <value description="startDate">2011-08-30 10:12:20</value>
+            <value description="endDate">2011-08-30 10:12:30</value>
+            <value description="queryString">select f1, f2 from dbx1_11 where f5 = 6
+            </value>
+
+        </row>
+        <row>
+            <value description="id">69</value>
+            <value description="job_id">60</value>
+            <value description="jobInstanceSize">10</value>
+            <value description="remainedSize">0</value>
+            <value description="status">SUCCESS</value>
+            <value description="createDate">2011-09-30 10:12:12</value>
+            <value description="startDate">2011-09-30 10:12:20</value>
+            <value description="endDate">2011-09-30 10:12:30</value>
+            <value description="queryString">select f1, f2 from dbx1_11 where f5 = 7
+            </value>
+
+        </row>
+        <row>
+            <value description="id">70</value>
+            <value description="job_id">60</value>
+            <value description="jobInstanceSize">0</value>
+            <value description="remainedSize">0</value>
+            <value description="status">OPEN</value>
+            <value description="createDate">2011-10-30 10:12:12</value>
+            <null/>
+            <null/>
+            <value description="queryString">select f1, f2 from dbx1_11 where f5 = 8
+            </value>
+
+        </row>
+        <row>
+            <value description="id">71</value>
+            <value description="job_id">60</value>
+            <value description="jobInstanceSize">10</value>
+            <value description="remainedSize">0</value>
+            <value description="status">IN_PROGRESS</value>
+            <value description="createDate">2011-11-30 10:12:12</value>
+            <value description="startDate">2011-11-30 10:12:20</value>
+            <null/>
+            <value description="queryString">select f1, f2 from dbx1_11 where f5 = 9
+            </value>
+
+        </row>
+    </table>
+
+</dataset>

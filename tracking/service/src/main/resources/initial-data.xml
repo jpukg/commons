@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <table name="TRACK">
+        <column>ID</column>
+        <column>subSystem</column>
+        <column>occurrenceDate</column>
+        <column>description</column>
+        <column>trackID</column>
+        <column>version</column>
+
+    </table>
+
+    <table name="XSYNONYM">
+        <column>ID</column>
+        <column>version</column>
+
+    </table>
+    <table name="Synonym_elements">
+        <column>synonym_ID</column>
+        <column>synonymelements</column>
+
+    </table>
+
+</dataset>

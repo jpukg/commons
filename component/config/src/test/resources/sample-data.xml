@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <!--<table name="Config">-->
+    <!--<column>id</column>-->
+    <!--<column>version</column>-->
+    <!--<column>name</column>-->
+    <!--<row>-->
+    <!--<value description="id">-1</value>-->
+    <!--<value description="version">0</value>-->
+    <!--<value description="name">config1</value>-->
+    <!--</row>-->
+    <!--</table>-->
+
+    <!--<table name="Config_properties">-->
+    <!--<column>Config_id</column>-->
+    <!--<column>key</column>-->
+    <!--<column>value</column>-->
+    <!--<row>-->
+    <!--<value description="Config_id">-1</value>-->
+    <!--<value description="key">pName1</value>-->
+    <!--<value description="value">pName2</value>-->
+    <!--</row>-->
+    <!--</table>-->
+
+</dataset>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment/>
+    <entry key="sendIntervalTime">20000,98777,test</entry>
+    <entry key="recoverIntervalTime">30000,array</entry>
+    <entry key="updateIntervalTime">40000</entry>
+    <entry key="modificationkey">m</entry>
+    <entry key="alreadyExists">now</entry>
+</properties>

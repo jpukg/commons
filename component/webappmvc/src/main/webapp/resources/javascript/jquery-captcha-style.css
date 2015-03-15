@@ -1,0 +1,39 @@
+img.captchaImage {
+    margin: 10px;
+    width: 200px;
+}
+
+input.captchaText {
+    width: 150px;
+    float: left;
+    margin: 10px;
+    text-align: left;
+    padding-left: 3px;
+}
+
+div.captcha {
+    border: 1px solid #999;
+    width: 230px;
+    border-radius: 15px 15px 15px 15px;
+    float: left;
+
+}
+
+div.reloadImage {
+    width: 50px;
+    padding-left: 10px;
+    padding-top: 35px;
+
+}
+
+div.reloadImage img {
+
+    cursor: pointer;
+}
+
+div.captchaContainer {
+    margin: 20px 0 0 0;
+    float: left;
+    width: 270px;
+    padding: 5px 2px;
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <table name="TRACK">
+        <column>ID</column>
+        <column>subSystem</column>
+        <column>occurrenceDate</column>
+        <column>description</column>
+        <column>trackID</column>
+        <column>version</column>
+        <row>
+            <value description="ID">-1</value>
+            <value description="subSystem">test_subSystem</value>
+            <value description="occurrenceDate">2012-09-07 10:12:12</value>
+            <value description="description">description_test_1</value>
+            <value description="trackID">trackID_test_1</value>
+            <value description="version">0</value>
+        </row>
+        <row>
+            <value description="ID">-2</value>
+            <value description="subSystem">test_subSystem</value>
+            <value description="occurrenceDate">2012-09-07 10:12:12</value>
+            <value description="description">description_test_2</value>
+            <value description="trackID">trackID_test_2</value>
+            <value description="version">0</value>
+        </row>
+    </table>
+
+    <table name="XSYNONYM">
+        <column>ID</column>
+        <column>version</column>
+        <row>
+            <value description="ID">-1</value>
+            <value description="version">0</value>
+        </row>
+        <row>
+            <value description="ID">-2</value>
+            <value description="version">0</value>
+        </row>
+    </table>
+    <table name="Synonym_elements">
+        <column>synonym_ID</column>
+        <column>synonymelements</column>
+        <row>
+            <value description="synonym_ID">-1</value>
+            <value description="synonymelements">id1</value>
+        </row>
+        <row>
+            <value description="synonym_ID">-1</value>
+            <value description="synonymelements">id2</value>
+        </row>
+
+        <row>
+            <value description="synonym_ID">-2</value>
+            <value description="synonymelements">id7</value>
+        </row>
+        <row>
+            <value description="synonym_ID">-2</value>
+            <value description="synonymelements">id8</value>
+        </row>
+    </table>
+
+</dataset>

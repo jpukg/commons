@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
+
+    <persistence-unit name="ApplicationEntityManager" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+
+        <class>com.samenea.common.security.model.Role</class>
+        <class>com.samenea.common.security.model.User</class>
+        <class>com.samenea.common.security.model.acl.AclEntry</class>
+        <class>com.samenea.common.security.model.acl.AclClass</class>
+        <class>com.samenea.common.security.model.acl.AclObjectIdentity</class>
+        <class>com.samenea.common.security.model.acl.AclSid</class>
+    </persistence-unit>
+
+</persistence>

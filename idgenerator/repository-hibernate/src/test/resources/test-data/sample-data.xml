@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dataset>
+    <table name="HILO_GENERATOR">
+        <column>id</column>
+        <column>hi</column>
+        <column>name</column>
+        <column>version</column>
+        <row>
+            <value description="id">1</value>
+            <value description="hi">2</value>
+            <value description="name">sms</value>
+            <value description="version">0</value>
+        </row>
+    </table>
+</dataset>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <table name="ID_GENERATOR_MODEL">
+        <column>id</column>
+        <column>version</column>
+        <column>sequenceID</column>
+        <column>token</column>
+        <row>
+            <value description="id">-1</value>
+            <value description="version">0</value>
+            <value description="sequenceID">0</value>
+            <value description="token"><![CDATA[ ]]></value>
+        </row>
+        <row>
+            <value description="id">-2</value>
+            <value description="version">0</value>
+            <value description="sequenceID">200</value>
+            <value description="token">token2</value>
+        </row>
+        <row>
+            <value description="id">-3</value>
+            <value description="version">0</value>
+            <value description="sequenceID">800</value>
+            <value description="token">token3</value>
+        </row>
+        <row>
+            <value description="id">-4</value>
+            <value description="version">0</value>
+            <value description="sequenceID">1000000000</value>
+            <value description="token">token4</value>
+        </row>
+    </table>
+
+
+</dataset>

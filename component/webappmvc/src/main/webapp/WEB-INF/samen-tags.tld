@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+        version="2.0">
+
+    <description>Samen JSP Tag Library</description>
+    <tlib-version>3.0</tlib-version>
+    <short-name>samen</short-name>
+    <uri>http://www.samenea.com/jsp/tags</uri>
+    <tag>
+        <description>Renders an HTML 'captcha' tag with type using the bound value.</description>
+        <name>captcha</name>
+        <tag-class>com.samenea.common.security.web.taglibs.CaptchaTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <description>HTML Standard Attribute</description>
+            <name>id</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+
+        <attribute>
+            <description>java script captcha plugin url</description>
+            <name>jqueryCaptchaUrl</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>css url for captcha</description>
+            <name>jqueryCaptchaCssUrl</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>reload image url</description>
+            <name>reloadImageSrc</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>captcha image url</description>
+            <name>captchaImageSrc</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>input name attribute </description>
+            <name>name</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+
+    </tag>
+</taglib>
